@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 int n;
 string s[20] = { "zero","one","two","three","four","five","six","seven","eight","nine" };
@@ -15,7 +16,7 @@ int main()
 		cout << s2[n - 12] << "teen";
 	else if (n % 10 == 0)
 		cout << s2[(n / 10) - 2] << "ty";
-	else   if (n % 10 != 0)
+	else  
 		cout << s2[(n / 10) - 2] << "ty-" << s[n % 10]; 
 	return 0;
 }
